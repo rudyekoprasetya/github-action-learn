@@ -14,13 +14,6 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v4
 
-    - name: Setup PHP
-      uses: shivammathur/setup-php@v3
-      with:
-        php-version: '8.2'
-        extensions: mbstring, xml
-        coverage: none
-
     - name: Install dependencies
       run: composer install --no-progress --prefer-dist
 
